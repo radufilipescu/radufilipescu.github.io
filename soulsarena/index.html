@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#10100e">
+  <title>Souls Arena — The Ashen Games</title>
+  <style>
+    :root { color-scheme: dark; font-family: Georgia, 'Times New Roman', serif; background: #10100e; color: #e5d5b7; }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; width: 100%; height: 100%; overflow: hidden; }
+    #game { display: block; width: 100%; height: 100%; outline: 0; touch-action: none; }
+    #loading { position: fixed; inset: 0; display: grid; place-items: center; padding: 24px; background: radial-gradient(ellipse at 50% 20%, #322719, #10100e 75%); z-index: 2; }
+    #loading[hidden] { display: none; }
+    .panel { max-width: 600px; text-align: center; }
+    .eyebrow { font: 11px/1.5 system-ui, sans-serif; text-transform: uppercase; letter-spacing: .38em; color: #bc975c; }
+    h1 { margin: 22px 0 16px; font-size: clamp(34px, 6vw, 66px); font-weight: normal; letter-spacing: .08em; text-transform: uppercase; }
+    .rule { width: 80px; height: 1px; margin: 25px auto; background: #bc975c; }
+    p { font: 14px/1.8 system-ui, sans-serif; color: #b7b0a4; }
+    #status { color: #e5d5b7; }
+    button { border: 1px solid #bc975c; padding: 12px 28px; margin-top: 12px; background: #201b14; color: #e5d5b7; font: 12px system-ui, sans-serif; letter-spacing: .15em; text-transform: uppercase; cursor: pointer; }
+    button:hover, button:focus-visible { background: #3d3020; outline: 1px solid #e5d5b7; outline-offset: 4px; }
+    #error { overflow-wrap: anywhere; }
+    noscript { position: fixed; inset: 25%; z-index: 3; padding: 24px; background: #10100e; text-align: center; }
+  </style>
+</head>
+<body>
+  <canvas id="game" tabindex="0" aria-label="Souls Arena game. WASD to move, J to attack, Space to dodge, Escape to restart."></canvas>
+  <section id="loading" aria-live="polite">
+    <div class="panel">
+      <div class="eyebrow">A gladiator soulslike • Proof of concept</div>
+      <h1>Souls Arena</h1>
+      <div class="rule"></div>
+      <p id="status">Preparing the amphitheater…</p>
+      <p id="hint">Three champions. One longsword.<br>Connect an Xbox or PS5 controller and press a button to wake it.</p>
+      <p id="error" hidden></p>
+      <button id="enter" hidden>Enter the arena</button>
+      <button id="retry" hidden>Try again</button>
+    </div>
+  </section>
+  <noscript>JavaScript and WebGL2 are required to enter the arena.</noscript>
+  <script type="module">
+    const canvas = document.querySelector('#game');
+    const loading = document.querySelector('#loading');
+    const status = document.querySelector('#status');
+    const errorText = document.querySelector('#error');
+    const enter = document.querySelector('#enter');
+    const retry = document.querySelector('#retry');
+    let failed = false;
+    function fail(error) {
+      // Bevy/winit's event-loop handoff is control flow in some browser versions.
+      const message = String(error?.message ?? error);
+      if (message.includes('Using exceptions for control flow')) return;
+      failed = true;
+      loading.hidden = false;
+      status.textContent = 'The arena could not start.';
+      errorText.textContent = message;
+      errorText.hidden = false;
+      enter.hidden = true;
+      retry.hidden = false;
+    }
+    retry.addEventListener('click', () => location.reload());
+    canvas.addEventListener('pointerdown', () => canvas.focus());
+    canvas.addEventListener('contextmenu', event => event.preventDefault());
+    window.addEventListener('keydown', event => {
+      if (document.activeElement === canvas && ['Space', 'Tab', 'ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight'].includes(event.code)) event.preventDefault();
+    });
+    window.addEventListener('error', event => fail(event.error ?? event.message));
+    window.addEventListener('unhandledrejection', event => fail(event.reason));
+    try {
+      const [{ default: init }, wasmModule] = await Promise.all([
+        import('./soulsarena.js'),
+        WebAssembly.compileStreaming(fetch('./soulsarena_bg.wasm')),
+      ]);
+      status.textContent = 'The gates are open.';
+      enter.hidden = false;
+      enter.focus();
+      await new Promise(resolve => enter.addEventListener('click', resolve, { once: true }));
+      enter.hidden = true;
+      status.textContent = 'Entering the arena…';
+      await init({ module_or_path: wasmModule });
+      if (!failed) {
+        loading.hidden = true;
+        canvas.focus();
+      }
+    } catch (error) {
+      if (String(error).includes('Using exceptions for control flow')) {
+        loading.hidden = true;
+        canvas.focus();
+      } else fail(error);
+    }
+  </script>
+</body>
+</html>

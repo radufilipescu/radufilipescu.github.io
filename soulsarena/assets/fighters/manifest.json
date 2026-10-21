@@ -1,0 +1,1765 @@
+{
+  "asset": "knight.glb",
+  "author": "Adobe Mixamo / J Nordstrom",
+  "license": "Adobe Mixamo terms",
+  "license_url": "https://helpx.adobe.com/creative-cloud/faq/mixamo-faq.html",
+  "original": "https://www.mixamo.com/",
+  "source_archive": "Pro Sword and Shield Pack.zip",
+  "source_sha256": "11dca886f96f5464b383285972a859a1ad91c2a17fac82c4a9bbc51c1392cb40",
+  "source_files": {
+    "Paladin WProp J Nordstrom.fbx": "9d32f89eb3083a303f60145eaf1dc2ffcd1b6309f8279f117abe3955b9060703",
+    "sword and shield idle (4).fbx": "089b5300e98752bab32fe564c16d23d40b62b9b59b20c72585b3fa743e257952",
+    "sword and shield walk.fbx": "d748551308637ffd9b09d0725710a6d6dc7c7bf2a6ce876db30850bd298ae491",
+    "sword and shield walk (2).fbx": "5731c1d305992772ab347751ff9857ffd291ff47e88d47c68c5e2a244fd172bc",
+    "sword and shield run.fbx": "281d802ba08bf26d9f50ab106507c2943409a757a97668206addbfee881c0807",
+    "sword and shield run (2).fbx": "e04a8bc255d9e5c6a97d5b74d40862b53af2f9e9cdb6fb9af47f25313f23ace3",
+    "sword and shield strafe (2).fbx": "76b3e71d21cabad512e18d6a2bd99edd37b931aae9b2f3da25daa5f8bc6291e9",
+    "sword and shield strafe.fbx": "a76d14f851555cf4917fa2ef4bdf27e05b1b744ad4e0ff34c6f57b4287fb6737",
+    "sword and shield strafe (3).fbx": "57b2f42759d303f5c7e4c9a8af1352090141739d1bec4b3ea6617b4b57153aad",
+    "sword and shield strafe (4).fbx": "1f4c6c91152851b94c3b8eb71a4d721ac61f1df553f623a9186922dda23b6b93",
+    "sword and shield slash.fbx": "e6cbcfb137a66bbf26d590977a834ada26c4c860ef401394151be649db4592be",
+    "sword and shield slash (3).fbx": "8a866706812fd50c399f621e76cc88c6343ea2de9d3b55c4db501d05d03e39ef",
+    "sword and shield block.fbx": "79ee6437272f42a20145f6d63702b4078016b174b88f67c42d75ade0807d3dfa",
+    "sword and shield block idle.fbx": "40e2b3e31d7c12b7eed7a44651784d580d508604136fb318ed20b584408796fd",
+    "sword and shield block (2).fbx": "a92ea6db1458adf02f3c7a970b60543c099c6d0b247aa23bd7a05d3490b69e16",
+    "sword and shield impact.fbx": "0af92387808c496da38654bac2472afebb34e20b4871cf1863d036d4a2dba919",
+    "sword and shield impact (2).fbx": "eb0871b742c6cb612bd55e60000744761b8e4af6cc210aab76abc9816fb6bbbf",
+    "sword and shield impact (3).fbx": "3fc8fcc1086607319f9b5200f080f27cb416af1e9bcaecef41430dd53dc9cf94",
+    "sword and shield death.fbx": "26b7fa9dd033c30fb8373c1775e38580d86be329636287860a0c0c2b30c7f86b",
+    "sword and shield death (2).fbx": "fd3046af9ca99ea4b17657f5dcdb4fe7d300f958e229f44c7494bb57a30680c1",
+    "sword and shield jump.fbx": "20de80d32d148a622670902dbfeeb1b3919c4aa6f07ad21128fb14e25d6b9f40",
+    "sword and shield jump (2).fbx": "cc751d0855491793d9b16f832f82a59e1e4ff7bd79ac0fef6305ec4e0993b8ff",
+    "sword and shield turn.fbx": "af4c26ad90a3a204099fcb2fcc7c77ebabca9fc9e1cb580fb4eaf46b7fd388af",
+    "sword and shield turn (2).fbx": "a8e6e1849962ac5eefe63dfd27a16b458c674102c643975da1aacbc2a6a90a4d",
+    "sword and shield 180 turn.fbx": "3af2ac0ef316fedb8de7d95614f46cd1d93c987c3e0c4467747a2c4d5b23ce7e",
+    "sword and shield 180 turn (2).fbx": "183bd3495cdd46c8c83bb1d86d7239abf537dca3c5234aab6a0a4a74858a4695",
+    "sword and shield idle.fbx": "a027a2029b6254aba6aeac36564cdffb1a39a730bfa1a8a509c971c9190e6363",
+    "sword and shield idle (2).fbx": "b7ae6c6bdf031cb6efaac13dbdd919d2cc6dff3a86a3f499cb6143491e24d9e8",
+    "sword and shield idle (3).fbx": "7bbda68ea52a2127d633274d43466c1c03f1ae64878157d2ed94da0eba0fd14a",
+    "sword and shield crouch.fbx": "10f4f433338052b2ba76c608aedc3756d51b390a2c5ae24b475fde2a0c6999e4",
+    "sword and shield crouching.fbx": "61ba3877e8df0bb3301830310480b9fcb33addf66c2dadea87f17fc969079397",
+    "sword and shield crouch idle.fbx": "a76577314922cba00575c5c7b119effeb5732fc59dae2377d8dd99d25066a901",
+    "sword and shield crouch block.fbx": "3e6120fe79ab2f973f936ee4c7ca9662dbe821b0a1931fd350325b559fb07678",
+    "sword and shield crouch block idle.fbx": "e7da26c82eda4d15cdc3a8b62eb8dceb42add6a7184faf0e45df2f78937526e9",
+    "sword and shield crouching (2).fbx": "3e0f118fb829e12ff8bf9c43d948a56856eb85a04004ddb1a4fe3d166f7bbb3a",
+    "sword and shield crouch block (2).fbx": "2e0080c08cf22e78367afd5ce2d743b22e0f34df0ca1203fc8e581263e9e2e32",
+    "sword and shield crouching (3).fbx": "d747a534acece8d3f11ff630d7f457595b0193f48077e03853ddb96c742b6c5b",
+    "sword and shield slash (5).fbx": "122ea25a22159b5ec219badcdf5629b93ba4d7dfaedf9f44b657c90c21a8af17",
+    "sword and shield slash (2).fbx": "6436137346d5a387aeb1ca04e58115f58bbd6d3f221978d3863cd4e702279290",
+    "sword and shield slash (4).fbx": "c0577aa33453c709b4f3ec63b26abf87ebb21668bd84fd43397ff48822215cf5",
+    "sword and shield attack.fbx": "3567fa83d162ec8ea546252760f2bd30ffa6d930fa32cbb159050483798a170d",
+    "sword and shield attack (2).fbx": "3fd55cb27a2ff0cded838e481128a34a7dedd79d125ee22c916ced4b8cd6649b",
+    "sword and shield attack (3).fbx": "9070115bfe8e32ffdc8d86cafbaed46770bfbc2c8557486cfec38bdfb5c18ca9",
+    "sword and shield attack (4).fbx": "03ca29516697e85fd2ea9409981c4e3a8175b3bace4d3565a8af9050255b85cc",
+    "sword and shield kick.fbx": "f2585b6b0090c86ec32bc69652e4ce228024cfa34e1cc541d75ca0682b43afa3",
+    "sword and shield casting.fbx": "5ccb41ff662057468aa5ff84816a62a7a4315aa194c13dbd0fff44d5c02eeb44",
+    "sword and shield casting (2).fbx": "d1eef8dd4fdf4434ab8ea7d3070ea614674e7e09c1e7fa854438e12bc1d56bac",
+    "sword and shield power up.fbx": "51c2aeae603e0d3564ab98ab082f24dbad1f464aa2b90ed05fa1f6690e0d6cfc",
+    "draw sword 1.fbx": "3c8aa63e7a1e78b5e35a757a6827ca679aeb6ed893e54c5e58b82639f9733ccc",
+    "draw sword 2.fbx": "1be65203a4a7cc004f0ca5439da77ad88c9bbc735df195d4eb31d50cd0ca00e1",
+    "sheath sword 1.fbx": "6ef1ae80fa17dfafa71a85925598abe22dbb3227c547005a178411222bd38ca8",
+    "sheath sword 2.fbx": "b620455aaf89b8275bf1554529f1d0f02a30a3d60063b56a741c9e396127eea7"
+  },
+  "generated_files": {
+    "scripts/build_roll_animation.py": "6bc62be53b1d01c0e2990408c1846c7b24ad2aed20abce99e9012538882bcf5e",
+    "scripts/build_heal_animation.py": "a44767e29a90f8954865d5dd3da48ea334acbe138c6095c166bb959f6330fe61",
+    "scripts/build_strafe_animation.py": "1de51a6fb68480a7f73b3269c283e79e9ce71c165c6db82c17fdcd9b5ede3030"
+  },
+  "output_sha256": "98454b5bd11d954286c8e8a955587281a8b55735424dd4ccaf034a17b37f93f5",
+  "conversion": {
+    "blender_version": "4.5.3 LTS",
+    "source_fps": 30,
+    "height_metres": 1.95,
+    "scale": 1.1301265601979986,
+    "ground_offset": 0.002515838947147131,
+    "forward": "-Z",
+    "mesh_names": [
+      "Knight",
+      "Sword",
+      "Shield",
+      "Helmet"
+    ],
+    "skin_influences": "Four largest normalized source influences per vertex (glTF/Bevy)",
+    "textures": [
+      {
+        "name": "file1",
+        "source": "Paladin_diffuse.png",
+        "size": [
+          2048,
+          2048
+        ],
+        "embedded": true
+      },
+      {
+        "name": "file3",
+        "source": "Paladin_specular.png",
+        "size": [
+          2048,
+          2048
+        ],
+        "embedded": true
+      },
+      {
+        "name": "file4",
+        "source": "Paladin_normal.png",
+        "size": [
+          2048,
+          2048
+        ],
+        "embedded": true
+      }
+    ],
+    "clips": {
+      "Idle": {
+        "source_frames": [
+          1.0,
+          76.0
+        ],
+        "original_root_displacement": [
+          -0.00019535708555019514,
+          0.0003134971267677239,
+          0.00023622620695772475
+        ],
+        "speed_metres_per_second": 0.0001226162871584685
+      },
+      "WalkForward": {
+        "source_frames": [
+          1.0,
+          34.0
+        ],
+        "original_root_displacement": [
+          -2.9696256434056462e-05,
+          -6.736079217183582e-08,
+          -1.7425044648832484
+        ],
+        "speed_metres_per_second": 1.5840949683057224
+      },
+      "WalkBackward": {
+        "source_frames": [
+          1.0,
+          39.0
+        ],
+        "original_root_displacement": [
+          -1.2309175426478301e-05,
+          -3.368039608591791e-07,
+          1.5170147519743653
+        ],
+        "speed_metres_per_second": 1.1976432252823455
+      },
+      "RunForward": {
+        "source_frames": [
+          1.0,
+          22.0
+        ],
+        "original_root_displacement": [
+          -5.580976484584988e-05,
+          2.0208237651550744e-07,
+          -3.061401427126172
+        ],
+        "speed_metres_per_second": 4.373430610906974
+      },
+      "RunBackward": {
+        "source_frames": [
+          1.0,
+          17.0
+        ],
+        "original_root_displacement": [
+          -1.730565930786069e-05,
+          -6.736079217183582e-08,
+          2.470165515393559
+        ],
+        "speed_metres_per_second": 4.631560341476587
+      },
+      "StrafeLeft": {
+        "source_frames": [
+          1.0,
+          40.0
+        ],
+        "original_root_displacement": [
+          -1.4920476090774588,
+          1.3472158434367163e-07,
+          1.3902767560887513e-05
+        ],
+        "speed_metres_per_second": 1.1477289301094087
+      },
+      "StrafeRight": {
+        "source_frames": [
+          1.0,
+          35.0
+        ],
+        "original_root_displacement": [
+          1.470205063886235,
+          -6.736079217183582e-08,
+          1.3835752124339604e-05
+        ],
+        "speed_metres_per_second": 1.2972397623100038
+      },
+      "RunStrafeLeft": {
+        "source_frames": [
+          1.0,
+          21.0
+        ],
+        "original_root_displacement": [
+          -2.4477128161468427,
+          0.0,
+          -5.2025785502001725e-05
+        ],
+        "speed_metres_per_second": 3.671569225049615
+      },
+      "RunStrafeRight": {
+        "source_frames": [
+          1.0,
+          22.0
+        ],
+        "original_root_displacement": [
+          2.510004035099826,
+          0.0,
+          -2.8408394477105874e-05
+        ],
+        "speed_metres_per_second": 3.5857200503722724
+      },
+      "Slash": {
+        "source_frames": [
+          1.0,
+          46.0
+        ],
+        "original_root_displacement": [
+          -2.828627015028262e-08,
+          0.0,
+          -1.6840198042958954e-08
+        ],
+        "speed_metres_per_second": 2.194645351395931e-08
+      },
+      "HeavyAttack": {
+        "source_frames": [
+          1.0,
+          48.0
+        ],
+        "original_root_displacement": [
+          0.0016174497120477955,
+          -0.016394269598781402,
+          -0.007770925700865264
+        ],
+        "speed_metres_per_second": 0.0050664702054670895
+      },
+      "Block": {
+        "source_frames": [
+          1.0,
+          15.0
+        ],
+        "original_root_displacement": [
+          0.03259569998474812,
+          -0.11349518831844359,
+          -0.25957619353040884
+        ],
+        "speed_metres_per_second": 0.5606030459023967
+      },
+      "BlockIdle": {
+        "source_frames": [
+          1.0,
+          42.0
+        ],
+        "original_root_displacement": [
+          -0.0002776248078732535,
+          -0.0004061182160039981,
+          0.00046536334835959984
+        ],
+        "speed_metres_per_second": 0.0003965006974305885
+      },
+      "BlockRelease": {
+        "source_frames": [
+          1.0,
+          16.0
+        ],
+        "original_root_displacement": [
+          0.014405252757679966,
+          0.1359062585955977,
+          0.2974835803662977
+        ],
+        "speed_metres_per_second": 0.5956643077927841
+      },
+      "GuardImpact": {
+        "source_frames": [
+          1.0,
+          22.0
+        ],
+        "original_root_displacement": [
+          -0.0009513418619687729,
+          0.0009984216615709506,
+          0.002097198799585593
+        ],
+        "speed_metres_per_second": 0.00328984031102977
+      },
+      "Impact": {
+        "source_frames": [
+          1.0,
+          30.0
+        ],
+        "original_root_displacement": [
+          5.564405992838811e-05,
+          2.0208237651550744e-07,
+          4.137972147475402e-05
+        ],
+        "speed_metres_per_second": 7.173481750049151e-05
+      },
+      "ImpactShort": {
+        "source_frames": [
+          1.0,
+          22.0
+        ],
+        "original_root_displacement": [
+          3.824731307471644e-06,
+          0.0,
+          9.942459502765326e-06
+        ],
+        "speed_metres_per_second": 1.5218213479482629e-05
+      },
+      "Death": {
+        "source_frames": [
+          1.0,
+          70.0
+        ],
+        "original_root_displacement": [
+          -0.04274994576502312,
+          -0.7676589458508561,
+          1.302671229346156
+        ],
+        "speed_metres_per_second": 0.5666836982996348
+      },
+      "DeathVariant2": {
+        "source_frames": [
+          1.0,
+          118.0
+        ],
+        "original_root_displacement": [
+          0.2721217705880563,
+          -0.7344052130225547,
+          -1.053554449139833
+        ],
+        "speed_metres_per_second": 0.27900773218206293
+      },
+      "JumpForward": {
+        "source_frames": [
+          1.0,
+          26.0
+        ],
+        "original_root_displacement": [
+          3.639705387401699e-05,
+          1.3472158434367163e-07,
+          -2.764119659693221
+        ],
+        "speed_metres_per_second": 3.316943591919424
+      },
+      "Jump": {
+        "source_frames": [
+          1.0,
+          30.0
+        ],
+        "original_root_displacement": [
+          -1.5201995418104156e-05,
+          1.3472158434367163e-07,
+          -2.6961157066777287e-05
+        ],
+        "speed_metres_per_second": 3.20189485657858e-05
+      },
+      "TurnVariant1": {
+        "source_frames": [
+          1.0,
+          27.0
+        ],
+        "original_root_displacement": [
+          -0.048375616003650077,
+          0.006041993614644986,
+          -0.000258913538841877
+        ],
+        "speed_metres_per_second": 0.05581881792772878
+      },
+      "TurnVariant2": {
+        "source_frames": [
+          1.0,
+          29.0
+        ],
+        "original_root_displacement": [
+          -0.0006549866753862855,
+          1.9399908145488716e-05,
+          0.00012676089052954573
+        ],
+        "speed_metres_per_second": 0.0007147929283702111
+      },
+      "Turn180Variant1": {
+        "source_frames": [
+          1.0,
+          25.0
+        ],
+        "original_root_displacement": [
+          0.11817110506784374,
+          -2.0208237651550744e-07,
+          -0.2904373383815589
+        ],
+        "speed_metres_per_second": 0.39194677891089275
+      },
+      "Turn180Variant2": {
+        "source_frames": [
+          1.0,
+          26.0
+        ],
+        "original_root_displacement": [
+          0.08494195892868496,
+          1.9736712106347893e-05,
+          -0.5543458412604994
+        ],
+        "speed_metres_per_second": 0.6729790526291383
+      },
+      "IdleVariant1": {
+        "source_frames": [
+          1.0,
+          107.0
+        ],
+        "original_root_displacement": [
+          0.0072476328606221685,
+          0.003467329416253077,
+          0.010974519196798994
+        ],
+        "speed_metres_per_second": 0.0037221904439756863
+      },
+      "IdleVariant2": {
+        "source_frames": [
+          1.0,
+          225.0
+        ],
+        "original_root_displacement": [
+          -0.0009047955545780343,
+          -0.0014432049722815823,
+          0.00428020840706765
+        ],
+        "speed_metres_per_second": 0.0005859101626814133
+      },
+      "IdleVariant3": {
+        "source_frames": [
+          1.0,
+          261.0
+        ],
+        "original_root_displacement": [
+          0.00011985912284040628,
+          -3.368039608591791e-07,
+          -0.0003489275549186256
+        ],
+        "speed_metres_per_second": 4.256998816404663e-05
+      },
+      "CrouchEnter": {
+        "source_frames": [
+          1.0,
+          18.0
+        ],
+        "original_root_displacement": [
+          0.031355806723439184,
+          -0.4460879208530199,
+          0.27658184651913986
+        ],
+        "speed_metres_per_second": 0.49121216494217024
+      },
+      "CrouchExit": {
+        "source_frames": [
+          1.0,
+          16.0
+        ],
+        "original_root_displacement": [
+          -0.035544993333828455,
+          0.44609048056312245,
+          -0.2807922496740385
+        ],
+        "speed_metres_per_second": 0.566066194108461
+      },
+      "CrouchIdle": {
+        "source_frames": [
+          1.0,
+          74.0
+        ],
+        "original_root_displacement": [
+          5.105836217185026e-07,
+          -3.368039608591791e-08,
+          -8.091188903452935e-09
+        ],
+        "speed_metres_per_second": 2.0985523068231292e-07
+      },
+      "CrouchBlock": {
+        "source_frames": [
+          1.0,
+          15.0
+        ],
+        "original_root_displacement": [
+          -0.11035600700125561,
+          0.06842728191389641,
+          -0.30694706437812286
+        ],
+        "speed_metres_per_second": 0.6989622546465953
+      },
+      "CrouchBlockIdle": {
+        "source_frames": [
+          1.0,
+          9.0
+        ],
+        "original_root_displacement": [
+          -0.0005193951566714454,
+          -0.0018612797288960815,
+          -0.0008682915309108822
+        ],
+        "speed_metres_per_second": 0.003794180083287896
+      },
+      "CrouchBlockRelease": {
+        "source_frames": [
+          1.0,
+          16.0
+        ],
+        "original_root_displacement": [
+          0.11045277077921045,
+          -0.05854720508288456,
+          0.2736371863295461
+        ],
+        "speed_metres_per_second": 0.59017666614381
+      },
+      "CrouchBlockVariant2": {
+        "source_frames": [
+          1.0,
+          21.0
+        ],
+        "original_root_displacement": [
+          0.002929768981346179,
+          -0.0012432107803234018,
+          0.011285257688624805
+        ],
+        "speed_metres_per_second": 0.017489034324716955
+      },
+      "CrouchVariant3": {
+        "source_frames": [
+          1.0,
+          20.0
+        ],
+        "original_root_displacement": [
+          -2.28595656674568e-05,
+          6.736079217183582e-08,
+          -3.188855954493291e-05
+        ],
+        "speed_metres_per_second": 6.195110159837307e-05
+      },
+      "CrouchSlash": {
+        "source_frames": [
+          1.0,
+          42.0
+        ],
+        "original_root_displacement": [
+          -0.004330746630778853,
+          0.005504959699055024,
+          -0.008489594835009447
+        ],
+        "speed_metres_per_second": 0.006973465820898566
+      },
+      "SlashVariant2": {
+        "source_frames": [
+          1.0,
+          107.0
+        ],
+        "original_root_displacement": [
+          -5.536113144486168e-05,
+          4.715255452028507e-07,
+          -2.584003098618612
+        ],
+        "speed_metres_per_second": 0.7313216318523554
+      },
+      "SlashVariant4": {
+        "source_frames": [
+          1.0,
+          70.0
+        ],
+        "original_root_displacement": [
+          -0.021303212588601,
+          0.013704149002606966,
+          -1.0887295812040438
+        ],
+        "speed_metres_per_second": 0.47345129636464467
+      },
+      "AttackVariant1": {
+        "source_frames": [
+          1.0,
+          71.0
+        ],
+        "original_root_displacement": [
+          0.00029983903544363635,
+          -0.05681963652644957,
+          -3.837002479817256
+        ],
+        "speed_metres_per_second": 1.6444296392282483
+      },
+      "AttackVariant2": {
+        "source_frames": [
+          1.0,
+          40.0
+        ],
+        "original_root_displacement": [
+          -1.1950377098017135,
+          -0.06867028597165631,
+          -2.8220709575281573
+        ],
+        "speed_metres_per_second": 2.3574381362771692
+      },
+      "AttackVariant3": {
+        "source_frames": [
+          1.0,
+          53.0
+        ],
+        "original_root_displacement": [
+          0.0037144516918187613,
+          -0.05685742593085797,
+          -2.552085399742247
+        ],
+        "speed_metres_per_second": 1.4723585208773058
+      },
+      "AttackVariant4": {
+        "source_frames": [
+          1.0,
+          31.0
+        ],
+        "original_root_displacement": [
+          -0.006004201578955641,
+          0.002124694106684045,
+          -0.004604662187687074
+        ],
+        "speed_metres_per_second": 0.007566594376828226
+      },
+      "Kick": {
+        "source_frames": [
+          1.0,
+          37.0
+        ],
+        "original_root_displacement": [
+          2.697062967817645e-09,
+          0.0,
+          1.3452423827285571e-08
+        ],
+        "speed_metres_per_second": 1.1433438273367226e-08
+      },
+      "Cast": {
+        "source_frames": [
+          1.0,
+          90.0
+        ],
+        "original_root_displacement": [
+          -1.7178366980807942e-05,
+          -6.736079217183582e-08,
+          -0.0008671382404730339
+        ],
+        "speed_metres_per_second": 0.00029235113900803885
+      },
+      "CastVariant2": {
+        "source_frames": [
+          1.0,
+          32.0
+        ],
+        "original_root_displacement": [
+          4.4693885606013064e-05,
+          0.0,
+          -9.82092721415452e-07
+        ],
+        "speed_metres_per_second": 4.326258816655619e-05
+      },
+      "PowerUp": {
+        "source_frames": [
+          1.0,
+          72.0
+        ],
+        "original_root_displacement": [
+          -2.0195081246829685e-08,
+          0.0,
+          -2.828627015028262e-08
+        ],
+        "speed_metres_per_second": 1.4685480922839408e-08
+      },
+      "DrawSword1": {
+        "source_frames": [
+          1.0,
+          16.0
+        ],
+        "original_root_displacement": [
+          -0.025314345680057308,
+          -0.015168572624422677,
+          0.0809025343045165
+        ],
+        "speed_metres_per_second": 0.16954098211468402
+      },
+      "DrawSword2": {
+        "source_frames": [
+          1.0,
+          24.0
+        ],
+        "original_root_displacement": [
+          0.04624988201473688,
+          -0.1507880089669527,
+          -0.06841443284278963
+        ],
+        "speed_metres_per_second": 0.10771406862615389
+      },
+      "SheathSword1": {
+        "source_frames": [
+          1.0,
+          39.0
+        ],
+        "original_root_displacement": [
+          -0.02559786935933332,
+          0.1482827263844978,
+          0.08084949610078018
+        ],
+        "speed_metres_per_second": 0.06695133399138753
+      },
+      "SheathSword2": {
+        "source_frames": [
+          1.0,
+          26.0
+        ],
+        "original_root_displacement": [
+          0.025314343575032552,
+          0.015168437902838334,
+          -0.08090252588441746
+        ],
+        "speed_metres_per_second": 0.10172457887139974
+      },
+      "CombatRoll": {
+        "source_frames": [
+          0.0,
+          24.0
+        ],
+        "original_root_displacement": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "speed_metres_per_second": 0.0,
+        "generated": true,
+        "generator": "scripts/build_roll_animation.py"
+      },
+      "DrinkPotion": {
+        "source_frames": [
+          0.0,
+          60.0
+        ],
+        "original_root_displacement": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "speed_metres_per_second": 0.0,
+        "generated": true,
+        "generator": "scripts/build_heal_animation.py"
+      },
+      "StrafeRightMirrored": {
+        "source_frames": [
+          0.0,
+          39.0
+        ],
+        "original_root_displacement": [
+          1.4920476090774588,
+          1.3472158434367163e-07,
+          1.3902767560887513e-05
+        ],
+        "speed_metres_per_second": 1.1477289301094087,
+        "generated": true,
+        "derived_from": "StrafeLeft",
+        "generator": "scripts/build_strafe_animation.py"
+      },
+      "RunStrafeRightMirrored": {
+        "source_frames": [
+          0.0,
+          20.0
+        ],
+        "original_root_displacement": [
+          2.4477128161468427,
+          0.0,
+          -5.2025785502001725e-05
+        ],
+        "speed_metres_per_second": 3.671569225049615,
+        "generated": true,
+        "derived_from": "RunStrafeLeft",
+        "generator": "scripts/build_strafe_animation.py"
+      }
+    },
+    "sword_markers_bone_local": {
+      "base": [
+        -5.0744853019714355,
+        -0.6586824655532837,
+        11.653478622436523
+      ],
+      "tip": [
+        -20.701385498046875,
+        -5.249568462371826,
+        81.07406616210938
+      ]
+    }
+  },
+  "animations": [
+    {
+      "index": 0,
+      "name": "Idle",
+      "duration": 2.5,
+      "source_file": "sword and shield idle (4).fbx",
+      "source_frames": [
+        1.0,
+        76.0
+      ],
+      "original_root_displacement": [
+        -0.00019535708555019514,
+        0.0003134971267677239,
+        0.00023622620695772475
+      ],
+      "speed_metres_per_second": 0.0001226162871584685
+    },
+    {
+      "index": 1,
+      "name": "WalkForward",
+      "duration": 1.100000023841858,
+      "source_file": "sword and shield walk.fbx",
+      "source_frames": [
+        1.0,
+        34.0
+      ],
+      "original_root_displacement": [
+        -2.9696256434056462e-05,
+        -6.736079217183582e-08,
+        -1.7425044648832484
+      ],
+      "speed_metres_per_second": 1.5840949683057224
+    },
+    {
+      "index": 2,
+      "name": "WalkBackward",
+      "duration": 1.2666666507720947,
+      "source_file": "sword and shield walk (2).fbx",
+      "source_frames": [
+        1.0,
+        39.0
+      ],
+      "original_root_displacement": [
+        -1.2309175426478301e-05,
+        -3.368039608591791e-07,
+        1.5170147519743653
+      ],
+      "speed_metres_per_second": 1.1976432252823455
+    },
+    {
+      "index": 3,
+      "name": "RunForward",
+      "duration": 0.699999988079071,
+      "source_file": "sword and shield run.fbx",
+      "source_frames": [
+        1.0,
+        22.0
+      ],
+      "original_root_displacement": [
+        -5.580976484584988e-05,
+        2.0208237651550744e-07,
+        -3.061401427126172
+      ],
+      "speed_metres_per_second": 4.373430610906974
+    },
+    {
+      "index": 4,
+      "name": "RunBackward",
+      "duration": 0.5333333611488342,
+      "source_file": "sword and shield run (2).fbx",
+      "source_frames": [
+        1.0,
+        17.0
+      ],
+      "original_root_displacement": [
+        -1.730565930786069e-05,
+        -6.736079217183582e-08,
+        2.470165515393559
+      ],
+      "speed_metres_per_second": 4.631560341476587
+    },
+    {
+      "index": 5,
+      "name": "StrafeLeft",
+      "duration": 1.2999999523162842,
+      "source_file": "sword and shield strafe (2).fbx",
+      "source_frames": [
+        1.0,
+        40.0
+      ],
+      "original_root_displacement": [
+        -1.4920476090774588,
+        1.3472158434367163e-07,
+        1.3902767560887513e-05
+      ],
+      "speed_metres_per_second": 1.1477289301094087
+    },
+    {
+      "index": 6,
+      "name": "StrafeRight",
+      "duration": 1.1333333253860474,
+      "source_file": "sword and shield strafe.fbx",
+      "source_frames": [
+        1.0,
+        35.0
+      ],
+      "original_root_displacement": [
+        1.470205063886235,
+        -6.736079217183582e-08,
+        1.3835752124339604e-05
+      ],
+      "speed_metres_per_second": 1.2972397623100038
+    },
+    {
+      "index": 7,
+      "name": "RunStrafeLeft",
+      "duration": 0.6666666865348816,
+      "source_file": "sword and shield strafe (3).fbx",
+      "source_frames": [
+        1.0,
+        21.0
+      ],
+      "original_root_displacement": [
+        -2.4477128161468427,
+        0.0,
+        -5.2025785502001725e-05
+      ],
+      "speed_metres_per_second": 3.671569225049615
+    },
+    {
+      "index": 8,
+      "name": "RunStrafeRight",
+      "duration": 0.699999988079071,
+      "source_file": "sword and shield strafe (4).fbx",
+      "source_frames": [
+        1.0,
+        22.0
+      ],
+      "original_root_displacement": [
+        2.510004035099826,
+        0.0,
+        -2.8408394477105874e-05
+      ],
+      "speed_metres_per_second": 3.5857200503722724
+    },
+    {
+      "index": 9,
+      "name": "Slash",
+      "duration": 1.5,
+      "source_file": "sword and shield slash.fbx",
+      "source_frames": [
+        1.0,
+        46.0
+      ],
+      "original_root_displacement": [
+        -2.828627015028262e-08,
+        0.0,
+        -1.6840198042958954e-08
+      ],
+      "speed_metres_per_second": 2.194645351395931e-08
+    },
+    {
+      "index": 10,
+      "name": "HeavyAttack",
+      "duration": 1.5666667222976685,
+      "source_file": "sword and shield slash (3).fbx",
+      "source_frames": [
+        1.0,
+        48.0
+      ],
+      "original_root_displacement": [
+        0.0016174497120477955,
+        -0.016394269598781402,
+        -0.007770925700865264
+      ],
+      "speed_metres_per_second": 0.0050664702054670895
+    },
+    {
+      "index": 11,
+      "name": "Block",
+      "duration": 0.46666666865348816,
+      "source_file": "sword and shield block.fbx",
+      "source_frames": [
+        1.0,
+        15.0
+      ],
+      "original_root_displacement": [
+        0.03259569998474812,
+        -0.11349518831844359,
+        -0.25957619353040884
+      ],
+      "speed_metres_per_second": 0.5606030459023967
+    },
+    {
+      "index": 12,
+      "name": "BlockIdle",
+      "duration": 1.3666666746139526,
+      "source_file": "sword and shield block idle.fbx",
+      "source_frames": [
+        1.0,
+        42.0
+      ],
+      "original_root_displacement": [
+        -0.0002776248078732535,
+        -0.0004061182160039981,
+        0.00046536334835959984
+      ],
+      "speed_metres_per_second": 0.0003965006974305885
+    },
+    {
+      "index": 13,
+      "name": "BlockRelease",
+      "duration": 0.5,
+      "source_file": "sword and shield block (2).fbx",
+      "source_frames": [
+        1.0,
+        16.0
+      ],
+      "original_root_displacement": [
+        0.014405252757679966,
+        0.1359062585955977,
+        0.2974835803662977
+      ],
+      "speed_metres_per_second": 0.5956643077927841
+    },
+    {
+      "index": 14,
+      "name": "GuardImpact",
+      "duration": 0.699999988079071,
+      "source_file": "sword and shield impact.fbx",
+      "source_frames": [
+        1.0,
+        22.0
+      ],
+      "original_root_displacement": [
+        -0.0009513418619687729,
+        0.0009984216615709506,
+        0.002097198799585593
+      ],
+      "speed_metres_per_second": 0.00328984031102977
+    },
+    {
+      "index": 15,
+      "name": "Impact",
+      "duration": 0.9666666388511658,
+      "source_file": "sword and shield impact (2).fbx",
+      "source_frames": [
+        1.0,
+        30.0
+      ],
+      "original_root_displacement": [
+        5.564405992838811e-05,
+        2.0208237651550744e-07,
+        4.137972147475402e-05
+      ],
+      "speed_metres_per_second": 7.173481750049151e-05
+    },
+    {
+      "index": 16,
+      "name": "ImpactShort",
+      "duration": 0.699999988079071,
+      "source_file": "sword and shield impact (3).fbx",
+      "source_frames": [
+        1.0,
+        22.0
+      ],
+      "original_root_displacement": [
+        3.824731307471644e-06,
+        0.0,
+        9.942459502765326e-06
+      ],
+      "speed_metres_per_second": 1.5218213479482629e-05
+    },
+    {
+      "index": 17,
+      "name": "Death",
+      "duration": 2.299999952316284,
+      "source_file": "sword and shield death.fbx",
+      "source_frames": [
+        1.0,
+        70.0
+      ],
+      "original_root_displacement": [
+        -0.04274994576502312,
+        -0.7676589458508561,
+        1.302671229346156
+      ],
+      "speed_metres_per_second": 0.5666836982996348
+    },
+    {
+      "index": 18,
+      "name": "DeathVariant2",
+      "duration": 3.9000000953674316,
+      "source_file": "sword and shield death (2).fbx",
+      "source_frames": [
+        1.0,
+        118.0
+      ],
+      "original_root_displacement": [
+        0.2721217705880563,
+        -0.7344052130225547,
+        -1.053554449139833
+      ],
+      "speed_metres_per_second": 0.27900773218206293
+    },
+    {
+      "index": 19,
+      "name": "JumpForward",
+      "duration": 0.8333333134651184,
+      "source_file": "sword and shield jump.fbx",
+      "source_frames": [
+        1.0,
+        26.0
+      ],
+      "original_root_displacement": [
+        3.639705387401699e-05,
+        1.3472158434367163e-07,
+        -2.764119659693221
+      ],
+      "speed_metres_per_second": 3.316943591919424
+    },
+    {
+      "index": 20,
+      "name": "Jump",
+      "duration": 0.9666666388511658,
+      "source_file": "sword and shield jump (2).fbx",
+      "source_frames": [
+        1.0,
+        30.0
+      ],
+      "original_root_displacement": [
+        -1.5201995418104156e-05,
+        1.3472158434367163e-07,
+        -2.6961157066777287e-05
+      ],
+      "speed_metres_per_second": 3.20189485657858e-05
+    },
+    {
+      "index": 21,
+      "name": "TurnVariant1",
+      "duration": 0.8666666746139526,
+      "source_file": "sword and shield turn.fbx",
+      "source_frames": [
+        1.0,
+        27.0
+      ],
+      "original_root_displacement": [
+        -0.048375616003650077,
+        0.006041993614644986,
+        -0.000258913538841877
+      ],
+      "speed_metres_per_second": 0.05581881792772878
+    },
+    {
+      "index": 22,
+      "name": "TurnVariant2",
+      "duration": 0.9333333373069763,
+      "source_file": "sword and shield turn (2).fbx",
+      "source_frames": [
+        1.0,
+        29.0
+      ],
+      "original_root_displacement": [
+        -0.0006549866753862855,
+        1.9399908145488716e-05,
+        0.00012676089052954573
+      ],
+      "speed_metres_per_second": 0.0007147929283702111
+    },
+    {
+      "index": 23,
+      "name": "Turn180Variant1",
+      "duration": 0.800000011920929,
+      "source_file": "sword and shield 180 turn.fbx",
+      "source_frames": [
+        1.0,
+        25.0
+      ],
+      "original_root_displacement": [
+        0.11817110506784374,
+        -2.0208237651550744e-07,
+        -0.2904373383815589
+      ],
+      "speed_metres_per_second": 0.39194677891089275
+    },
+    {
+      "index": 24,
+      "name": "Turn180Variant2",
+      "duration": 0.8333333134651184,
+      "source_file": "sword and shield 180 turn (2).fbx",
+      "source_frames": [
+        1.0,
+        26.0
+      ],
+      "original_root_displacement": [
+        0.08494195892868496,
+        1.9736712106347893e-05,
+        -0.5543458412604994
+      ],
+      "speed_metres_per_second": 0.6729790526291383
+    },
+    {
+      "index": 25,
+      "name": "IdleVariant1",
+      "duration": 3.5333333015441895,
+      "source_file": "sword and shield idle.fbx",
+      "source_frames": [
+        1.0,
+        107.0
+      ],
+      "original_root_displacement": [
+        0.0072476328606221685,
+        0.003467329416253077,
+        0.010974519196798994
+      ],
+      "speed_metres_per_second": 0.0037221904439756863
+    },
+    {
+      "index": 26,
+      "name": "IdleVariant2",
+      "duration": 7.4666666984558105,
+      "source_file": "sword and shield idle (2).fbx",
+      "source_frames": [
+        1.0,
+        225.0
+      ],
+      "original_root_displacement": [
+        -0.0009047955545780343,
+        -0.0014432049722815823,
+        0.00428020840706765
+      ],
+      "speed_metres_per_second": 0.0005859101626814133
+    },
+    {
+      "index": 27,
+      "name": "IdleVariant3",
+      "duration": 8.666666984558105,
+      "source_file": "sword and shield idle (3).fbx",
+      "source_frames": [
+        1.0,
+        261.0
+      ],
+      "original_root_displacement": [
+        0.00011985912284040628,
+        -3.368039608591791e-07,
+        -0.0003489275549186256
+      ],
+      "speed_metres_per_second": 4.256998816404663e-05
+    },
+    {
+      "index": 28,
+      "name": "CrouchEnter",
+      "duration": 0.5666666626930237,
+      "source_file": "sword and shield crouch.fbx",
+      "source_frames": [
+        1.0,
+        18.0
+      ],
+      "original_root_displacement": [
+        0.031355806723439184,
+        -0.4460879208530199,
+        0.27658184651913986
+      ],
+      "speed_metres_per_second": 0.49121216494217024
+    },
+    {
+      "index": 29,
+      "name": "CrouchExit",
+      "duration": 0.5,
+      "source_file": "sword and shield crouching.fbx",
+      "source_frames": [
+        1.0,
+        16.0
+      ],
+      "original_root_displacement": [
+        -0.035544993333828455,
+        0.44609048056312245,
+        -0.2807922496740385
+      ],
+      "speed_metres_per_second": 0.566066194108461
+    },
+    {
+      "index": 30,
+      "name": "CrouchIdle",
+      "duration": 2.433333396911621,
+      "source_file": "sword and shield crouch idle.fbx",
+      "source_frames": [
+        1.0,
+        74.0
+      ],
+      "original_root_displacement": [
+        5.105836217185026e-07,
+        -3.368039608591791e-08,
+        -8.091188903452935e-09
+      ],
+      "speed_metres_per_second": 2.0985523068231292e-07
+    },
+    {
+      "index": 31,
+      "name": "CrouchBlock",
+      "duration": 0.46666666865348816,
+      "source_file": "sword and shield crouch block.fbx",
+      "source_frames": [
+        1.0,
+        15.0
+      ],
+      "original_root_displacement": [
+        -0.11035600700125561,
+        0.06842728191389641,
+        -0.30694706437812286
+      ],
+      "speed_metres_per_second": 0.6989622546465953
+    },
+    {
+      "index": 32,
+      "name": "CrouchBlockIdle",
+      "duration": 0.2666666805744171,
+      "source_file": "sword and shield crouch block idle.fbx",
+      "source_frames": [
+        1.0,
+        9.0
+      ],
+      "original_root_displacement": [
+        -0.0005193951566714454,
+        -0.0018612797288960815,
+        -0.0008682915309108822
+      ],
+      "speed_metres_per_second": 0.003794180083287896
+    },
+    {
+      "index": 33,
+      "name": "CrouchBlockRelease",
+      "duration": 0.5,
+      "source_file": "sword and shield crouching (2).fbx",
+      "source_frames": [
+        1.0,
+        16.0
+      ],
+      "original_root_displacement": [
+        0.11045277077921045,
+        -0.05854720508288456,
+        0.2736371863295461
+      ],
+      "speed_metres_per_second": 0.59017666614381
+    },
+    {
+      "index": 34,
+      "name": "CrouchBlockVariant2",
+      "duration": 0.6666666865348816,
+      "source_file": "sword and shield crouch block (2).fbx",
+      "source_frames": [
+        1.0,
+        21.0
+      ],
+      "original_root_displacement": [
+        0.002929768981346179,
+        -0.0012432107803234018,
+        0.011285257688624805
+      ],
+      "speed_metres_per_second": 0.017489034324716955
+    },
+    {
+      "index": 35,
+      "name": "CrouchVariant3",
+      "duration": 0.6333333253860474,
+      "source_file": "sword and shield crouching (3).fbx",
+      "source_frames": [
+        1.0,
+        20.0
+      ],
+      "original_root_displacement": [
+        -2.28595656674568e-05,
+        6.736079217183582e-08,
+        -3.188855954493291e-05
+      ],
+      "speed_metres_per_second": 6.195110159837307e-05
+    },
+    {
+      "index": 36,
+      "name": "CrouchSlash",
+      "duration": 1.3666666746139526,
+      "source_file": "sword and shield slash (5).fbx",
+      "source_frames": [
+        1.0,
+        42.0
+      ],
+      "original_root_displacement": [
+        -0.004330746630778853,
+        0.005504959699055024,
+        -0.008489594835009447
+      ],
+      "speed_metres_per_second": 0.006973465820898566
+    },
+    {
+      "index": 37,
+      "name": "SlashVariant2",
+      "duration": 3.5333333015441895,
+      "source_file": "sword and shield slash (2).fbx",
+      "source_frames": [
+        1.0,
+        107.0
+      ],
+      "original_root_displacement": [
+        -5.536113144486168e-05,
+        4.715255452028507e-07,
+        -2.584003098618612
+      ],
+      "speed_metres_per_second": 0.7313216318523554
+    },
+    {
+      "index": 38,
+      "name": "SlashVariant4",
+      "duration": 2.299999952316284,
+      "source_file": "sword and shield slash (4).fbx",
+      "source_frames": [
+        1.0,
+        70.0
+      ],
+      "original_root_displacement": [
+        -0.021303212588601,
+        0.013704149002606966,
+        -1.0887295812040438
+      ],
+      "speed_metres_per_second": 0.47345129636464467
+    },
+    {
+      "index": 39,
+      "name": "AttackVariant1",
+      "duration": 2.3333332538604736,
+      "source_file": "sword and shield attack.fbx",
+      "source_frames": [
+        1.0,
+        71.0
+      ],
+      "original_root_displacement": [
+        0.00029983903544363635,
+        -0.05681963652644957,
+        -3.837002479817256
+      ],
+      "speed_metres_per_second": 1.6444296392282483
+    },
+    {
+      "index": 40,
+      "name": "AttackVariant2",
+      "duration": 1.2999999523162842,
+      "source_file": "sword and shield attack (2).fbx",
+      "source_frames": [
+        1.0,
+        40.0
+      ],
+      "original_root_displacement": [
+        -1.1950377098017135,
+        -0.06867028597165631,
+        -2.8220709575281573
+      ],
+      "speed_metres_per_second": 2.3574381362771692
+    },
+    {
+      "index": 41,
+      "name": "AttackVariant3",
+      "duration": 1.7333333492279053,
+      "source_file": "sword and shield attack (3).fbx",
+      "source_frames": [
+        1.0,
+        53.0
+      ],
+      "original_root_displacement": [
+        0.0037144516918187613,
+        -0.05685742593085797,
+        -2.552085399742247
+      ],
+      "speed_metres_per_second": 1.4723585208773058
+    },
+    {
+      "index": 42,
+      "name": "AttackVariant4",
+      "duration": 1.0,
+      "source_file": "sword and shield attack (4).fbx",
+      "source_frames": [
+        1.0,
+        31.0
+      ],
+      "original_root_displacement": [
+        -0.006004201578955641,
+        0.002124694106684045,
+        -0.004604662187687074
+      ],
+      "speed_metres_per_second": 0.007566594376828226
+    },
+    {
+      "index": 43,
+      "name": "Kick",
+      "duration": 1.2000000476837158,
+      "source_file": "sword and shield kick.fbx",
+      "source_frames": [
+        1.0,
+        37.0
+      ],
+      "original_root_displacement": [
+        2.697062967817645e-09,
+        0.0,
+        1.3452423827285571e-08
+      ],
+      "speed_metres_per_second": 1.1433438273367226e-08
+    },
+    {
+      "index": 44,
+      "name": "Cast",
+      "duration": 2.9666666984558105,
+      "source_file": "sword and shield casting.fbx",
+      "source_frames": [
+        1.0,
+        90.0
+      ],
+      "original_root_displacement": [
+        -1.7178366980807942e-05,
+        -6.736079217183582e-08,
+        -0.0008671382404730339
+      ],
+      "speed_metres_per_second": 0.00029235113900803885
+    },
+    {
+      "index": 45,
+      "name": "CastVariant2",
+      "duration": 1.0333333015441895,
+      "source_file": "sword and shield casting (2).fbx",
+      "source_frames": [
+        1.0,
+        32.0
+      ],
+      "original_root_displacement": [
+        4.4693885606013064e-05,
+        0.0,
+        -9.82092721415452e-07
+      ],
+      "speed_metres_per_second": 4.326258816655619e-05
+    },
+    {
+      "index": 46,
+      "name": "PowerUp",
+      "duration": 2.366666555404663,
+      "source_file": "sword and shield power up.fbx",
+      "source_frames": [
+        1.0,
+        72.0
+      ],
+      "original_root_displacement": [
+        -2.0195081246829685e-08,
+        0.0,
+        -2.828627015028262e-08
+      ],
+      "speed_metres_per_second": 1.4685480922839408e-08
+    },
+    {
+      "index": 47,
+      "name": "DrawSword1",
+      "duration": 0.5,
+      "source_file": "draw sword 1.fbx",
+      "source_frames": [
+        1.0,
+        16.0
+      ],
+      "original_root_displacement": [
+        -0.025314345680057308,
+        -0.015168572624422677,
+        0.0809025343045165
+      ],
+      "speed_metres_per_second": 0.16954098211468402
+    },
+    {
+      "index": 48,
+      "name": "DrawSword2",
+      "duration": 0.7666666507720947,
+      "source_file": "draw sword 2.fbx",
+      "source_frames": [
+        1.0,
+        24.0
+      ],
+      "original_root_displacement": [
+        0.04624988201473688,
+        -0.1507880089669527,
+        -0.06841443284278963
+      ],
+      "speed_metres_per_second": 0.10771406862615389
+    },
+    {
+      "index": 49,
+      "name": "SheathSword1",
+      "duration": 1.2666666507720947,
+      "source_file": "sheath sword 1.fbx",
+      "source_frames": [
+        1.0,
+        39.0
+      ],
+      "original_root_displacement": [
+        -0.02559786935933332,
+        0.1482827263844978,
+        0.08084949610078018
+      ],
+      "speed_metres_per_second": 0.06695133399138753
+    },
+    {
+      "index": 50,
+      "name": "SheathSword2",
+      "duration": 0.8333333134651184,
+      "source_file": "sheath sword 2.fbx",
+      "source_frames": [
+        1.0,
+        26.0
+      ],
+      "original_root_displacement": [
+        0.025314343575032552,
+        0.015168437902838334,
+        -0.08090252588441746
+      ],
+      "speed_metres_per_second": 0.10172457887139974
+    },
+    {
+      "index": 51,
+      "name": "CombatRoll",
+      "duration": 0.800000011920929,
+      "source_file": null,
+      "source_frames": [
+        0.0,
+        24.0
+      ],
+      "original_root_displacement": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "speed_metres_per_second": 0.0,
+      "generated": true,
+      "generator": "scripts/build_roll_animation.py"
+    },
+    {
+      "index": 52,
+      "name": "DrinkPotion",
+      "duration": 2.0,
+      "source_file": null,
+      "source_frames": [
+        0.0,
+        60.0
+      ],
+      "original_root_displacement": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "speed_metres_per_second": 0.0,
+      "generated": true,
+      "generator": "scripts/build_heal_animation.py"
+    },
+    {
+      "index": 53,
+      "name": "StrafeRightMirrored",
+      "duration": 1.2999999523162842,
+      "source_file": null,
+      "source_frames": [
+        0.0,
+        39.0
+      ],
+      "original_root_displacement": [
+        1.4920476090774588,
+        1.3472158434367163e-07,
+        1.3902767560887513e-05
+      ],
+      "speed_metres_per_second": 1.1477289301094087,
+      "generated": true,
+      "derived_from": "StrafeLeft",
+      "generator": "scripts/build_strafe_animation.py"
+    },
+    {
+      "index": 54,
+      "name": "RunStrafeRightMirrored",
+      "duration": 0.6666666865348816,
+      "source_file": null,
+      "source_frames": [
+        0.0,
+        20.0
+      ],
+      "original_root_displacement": [
+        2.4477128161468427,
+        0.0,
+        -5.2025785502001725e-05
+      ],
+      "speed_metres_per_second": 3.671569225049615,
+      "generated": true,
+      "derived_from": "RunStrafeLeft",
+      "generator": "scripts/build_strafe_animation.py"
+    }
+  ],
+  "sword": {
+    "mesh": "Sword",
+    "bone": "mixamorig:Sword_joint",
+    "blade_base": "SwordBladeBase",
+    "blade_tip": "SwordBladeTip",
+    "collision_sample_rate": 960,
+    "attacks": [
+      {
+        "clip": "Slash",
+        "array": "SLASH_BLADE",
+        "active_source_seconds": [
+          0.54,
+          0.73
+        ]
+      },
+      {
+        "clip": "AttackVariant2",
+        "array": "COMBO_TWO_BLADE",
+        "active_source_seconds": [
+          0.54,
+          0.7
+        ]
+      },
+      {
+        "clip": "SlashVariant4",
+        "array": "COMBO_THREE_BLADE",
+        "active_source_seconds": [
+          1.32,
+          1.48
+        ]
+      },
+      {
+        "clip": "HeavyAttack",
+        "array": "HEAVY_BLADE",
+        "active_source_seconds": [
+          0.74,
+          0.92
+        ]
+      }
+    ]
+  },
+  "shield": {
+    "mesh": "Shield",
+    "bone": "mixamorig:Shield_joint"
+  },
+  "potion": {
+    "clip": "DrinkPotion",
+    "hand": "mixamorig:RightHand",
+    "grip": "PotionGrip",
+    "mouth": "PotionMouth",
+    "neck_tip": [
+      0.0,
+      0.12,
+      0.0
+    ],
+    "visible_seconds": [
+      0.2,
+      1.75
+    ],
+    "drink_seconds": [
+      0.7,
+      1.3
+    ],
+    "heal_seconds": 1.1,
+    "prop_scale": "metres in normalized model space"
+  },
+  "collision_output": "src/knight_motion.rs",
+  "collision_sha256": "4761ca70f7dc969a5cae10a64981c9e73621803169e383ec803065afa18639b9",
+  "modifications": [
+    "Converted the supplied Paladin model and all 51 authored FBX animations to GLB",
+    "Normalized the whole model to 1.95 metres and forward -Z",
+    "Preserved authored skinned sword, shield and helmet",
+    "Made horizontal hip translation constant; retained vertical motion and all rotations",
+    "Preserved embedded diffuse and normal textures; approximated legacy specular using PBR factors",
+    "Added separate generated roll, drinking and reflected right-strafe clips; retained original clips unchanged"
+  ]
+}

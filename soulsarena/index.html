@@ -40,54 +40,38 @@
   </section>
   <noscript>JavaScript and WebGL2 are required to enter the arena.</noscript>
   <script type="module">
+    import { createStartup } from './startup.js?v=310f4431330401ab';
+    import { startStartupProfile } from './startup-profile.js?v=310f4431330401ab';
+
     const canvas = document.querySelector('#game');
     const loading = document.querySelector('#loading');
     const status = document.querySelector('#status');
     const errorText = document.querySelector('#error');
     const enter = document.querySelector('#enter');
     const retry = document.querySelector('#retry');
-    let failed = false;
-    function fail(error) {
-      // Bevy/winit's event-loop handoff is control flow in some browser versions.
-      const message = String(error?.message ?? error);
-      if (message.includes('Using exceptions for control flow')) return;
-      failed = true;
-      loading.hidden = false;
-      status.textContent = 'The arena could not start.';
-      errorText.textContent = message;
-      errorText.hidden = false;
-      enter.hidden = true;
-      retry.hidden = false;
-    }
+    let recordStage = () => {};
+    const startup = createStartup({ canvas, loading, status, errorText, enter, retry }, state => recordStage(state));
+    window.soulsArenaStartup = startup.update;
     retry.addEventListener('click', () => location.reload());
     canvas.addEventListener('pointerdown', () => canvas.focus());
     canvas.addEventListener('contextmenu', event => event.preventDefault());
     window.addEventListener('keydown', event => {
       if (document.activeElement === canvas && ['Space', 'Tab', 'ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight'].includes(event.code)) event.preventDefault();
     });
-    window.addEventListener('error', event => fail(event.error ?? event.message));
-    window.addEventListener('unhandledrejection', event => fail(event.reason));
+    window.addEventListener('error', event => startup.fail(event.error ?? event.message));
+    window.addEventListener('unhandledrejection', event => startup.fail(event.reason));
     try {
       const [{ default: init }, wasmModule] = await Promise.all([
-        import('./soulsarena.js'),
-        WebAssembly.compileStreaming(fetch('./soulsarena_bg.wasm')),
+        import('./soulsarena.js?v=310f4431330401ab'),
+        WebAssembly.compileStreaming(fetch('./soulsarena_bg.wasm?v=310f4431330401ab')),
       ]);
-      status.textContent = 'The gates are open.';
-      enter.hidden = false;
-      enter.focus();
+      startup.compiled();
       await new Promise(resolve => enter.addEventListener('click', resolve, { once: true }));
-      enter.hidden = true;
-      status.textContent = 'Entering the arena…';
+      recordStage = startStartupProfile(canvas);
+      startup.begin();
       await init({ module_or_path: wasmModule });
-      if (!failed) {
-        loading.hidden = true;
-        canvas.focus();
-      }
     } catch (error) {
-      if (String(error).includes('Using exceptions for control flow')) {
-        loading.hidden = true;
-        canvas.focus();
-      } else fail(error);
+      startup.fail(error);
     }
   </script>
 </body>

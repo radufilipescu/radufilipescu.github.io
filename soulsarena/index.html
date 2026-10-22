@@ -40,8 +40,8 @@
   </section>
   <noscript>JavaScript and WebGL2 are required to enter the arena.</noscript>
   <script type="module">
-    import { createStartup } from './startup.js?v=377436d7d49b228f';
-    import { startStartupProfile } from './startup-profile.js?v=377436d7d49b228f';
+    import { createStartup } from './startup.js?v=afd3ce52f4a49a5c';
+    import { startStartupProfile } from './startup-profile.js?v=afd3ce52f4a49a5c';
 
     const canvas = document.querySelector('#game');
     const loading = document.querySelector('#loading');
@@ -62,8 +62,8 @@
     window.addEventListener('unhandledrejection', event => startup.fail(event.reason));
     try {
       const [{ default: init }, wasmModule] = await Promise.all([
-        import('./soulsarena.js?v=377436d7d49b228f'),
-        WebAssembly.compileStreaming(fetch('./soulsarena_bg.wasm?v=377436d7d49b228f')),
+        import('./soulsarena.js?v=afd3ce52f4a49a5c'),
+        WebAssembly.compileStreaming(fetch('./soulsarena_bg.wasm?v=afd3ce52f4a49a5c')),
       ]);
       startup.compiled();
       await new Promise(resolve => enter.addEventListener('click', resolve, { once: true }));

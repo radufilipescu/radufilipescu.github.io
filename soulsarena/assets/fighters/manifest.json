@@ -63,9 +63,10 @@
   "generated_files": {
     "scripts/build_roll_animation.py": "6bc62be53b1d01c0e2990408c1846c7b24ad2aed20abce99e9012538882bcf5e",
     "scripts/build_heal_animation.py": "a44767e29a90f8954865d5dd3da48ea334acbe138c6095c166bb959f6330fe61",
-    "scripts/build_strafe_animation.py": "1de51a6fb68480a7f73b3269c283e79e9ce71c165c6db82c17fdcd9b5ede3030"
+    "scripts/build_strafe_animation.py": "1de51a6fb68480a7f73b3269c283e79e9ce71c165c6db82c17fdcd9b5ede3030",
+    "scripts/build_combo_animation.py": "8ef6b0646868cada845c09ec8aec337f9e22872b1cf0199d0411c8d200d430f3"
   },
-  "output_sha256": "98454b5bd11d954286c8e8a955587281a8b55735424dd4ccaf034a17b37f93f5",
+  "output_sha256": "84efe5ae5b78c847bd7db30278b58448a6f8103ff758e43e4eb517ac7fb2b2a9",
   "conversion": {
     "blender_version": "4.5.3 LTS",
     "source_fps": 30,
@@ -779,6 +780,52 @@
         "generated": true,
         "derived_from": "RunStrafeLeft",
         "generator": "scripts/build_strafe_animation.py"
+      },
+      "ComboOne": {
+        "source_frames": [
+          0,
+          48
+        ],
+        "original_root_displacement": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "speed_metres_per_second": 0.0,
+        "generated": true,
+        "derived_from": "SlashVariant2",
+        "generator": "scripts/build_combo_animation.py",
+        "shared_prefix_seconds": 1.0,
+        "recovery_seconds": 0.6,
+        "recovery_sample_rate": 120,
+        "initial_support_foot": "Left",
+        "end_pose": {
+          "clip": "SlashVariant2",
+          "source_frame": 106
+        }
+      },
+      "ComboTwo": {
+        "source_frames": [
+          0,
+          62
+        ],
+        "original_root_displacement": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "speed_metres_per_second": 0.0,
+        "generated": true,
+        "derived_from": "SlashVariant2",
+        "generator": "scripts/build_combo_animation.py",
+        "shared_prefix_seconds": 1.4,
+        "recovery_seconds": 0.6666666666666666,
+        "recovery_sample_rate": 120,
+        "initial_support_foot": "Right",
+        "end_pose": {
+          "clip": "SlashVariant2",
+          "source_frame": 106
+        }
       }
     },
     "sword_markers_bone_local": {
@@ -1684,6 +1731,60 @@
       "generated": true,
       "derived_from": "RunStrafeLeft",
       "generator": "scripts/build_strafe_animation.py"
+    },
+    {
+      "index": 55,
+      "name": "ComboOne",
+      "duration": 1.600000023841858,
+      "source_file": null,
+      "source_frames": [
+        0,
+        48
+      ],
+      "original_root_displacement": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "speed_metres_per_second": 0.0,
+      "generated": true,
+      "derived_from": "SlashVariant2",
+      "generator": "scripts/build_combo_animation.py",
+      "shared_prefix_seconds": 1.0,
+      "recovery_seconds": 0.6,
+      "recovery_sample_rate": 120,
+      "initial_support_foot": "Left",
+      "end_pose": {
+        "clip": "SlashVariant2",
+        "source_frame": 106
+      }
+    },
+    {
+      "index": 56,
+      "name": "ComboTwo",
+      "duration": 2.066666603088379,
+      "source_file": null,
+      "source_frames": [
+        0,
+        62
+      ],
+      "original_root_displacement": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "speed_metres_per_second": 0.0,
+      "generated": true,
+      "derived_from": "SlashVariant2",
+      "generator": "scripts/build_combo_animation.py",
+      "shared_prefix_seconds": 1.4,
+      "recovery_seconds": 0.6666666666666666,
+      "recovery_sample_rate": 120,
+      "initial_support_foot": "Right",
+      "end_pose": {
+        "clip": "SlashVariant2",
+        "source_frame": 106
+      }
     }
   ],
   "sword": {
@@ -1694,37 +1795,45 @@
     "collision_sample_rate": 960,
     "attacks": [
       {
-        "clip": "Slash",
-        "array": "SLASH_BLADE",
+        "clip": "ComboOne",
+        "array": "COMBO_ONE_BLADE",
         "active_source_seconds": [
-          0.54,
-          0.73
+          0.63,
+          0.8
         ]
       },
       {
-        "clip": "AttackVariant2",
+        "clip": "ComboTwo",
         "array": "COMBO_TWO_BLADE",
         "active_source_seconds": [
-          0.54,
-          0.7
+          1.18,
+          1.36
         ]
       },
       {
-        "clip": "SlashVariant4",
+        "clip": "SlashVariant2",
         "array": "COMBO_THREE_BLADE",
         "active_source_seconds": [
-          1.32,
-          1.48
+          2.4,
+          2.54
         ]
       },
       {
-        "clip": "HeavyAttack",
-        "array": "HEAVY_BLADE",
+        "clip": "AttackVariant3",
+        "array": "PLAYER_HEAVY_BLADE",
         "active_source_seconds": [
-          0.74,
-          0.92
+          0.72,
+          0.88
         ]
       }
+    ],
+    "attack_users": [
+      "hero",
+      "boss"
+    ],
+    "combo_branches": [
+      1.0,
+      1.4
     ]
   },
   "shield": {
@@ -1753,13 +1862,14 @@
     "prop_scale": "metres in normalized model space"
   },
   "collision_output": "src/knight_motion.rs",
-  "collision_sha256": "4761ca70f7dc969a5cae10a64981c9e73621803169e383ec803065afa18639b9",
+  "collision_sha256": "1b3218ed13e50c817ec1bdf342ac9a8a79e8d814f6404bb67ae1764467394d10",
   "modifications": [
     "Converted the supplied Paladin model and all 51 authored FBX animations to GLB",
     "Normalized the whole model to 1.95 metres and forward -Z",
     "Preserved authored skinned sword, shield and helmet",
     "Made horizontal hip translation constant; retained vertical motion and all rotations",
     "Preserved embedded diffuse and normal textures; approximated legacy specular using PBR factors",
-    "Added separate generated roll, drinking and reflected right-strafe clips; retained original clips unchanged"
+    "Added separate generated roll, drinking and reflected right-strafe clips; retained original clips unchanged",
+    "Derived ComboOne/ComboTwo from exact SlashVariant2 prefixes, with generated momentum-matched planted-foot recovery tails"
   ]
 }

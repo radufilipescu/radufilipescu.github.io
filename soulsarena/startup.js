@@ -1,6 +1,6 @@
 // Bevy owns the same home menu on every platform. The renderer decides when
 // that menu is ready to replace this browser-only download/loading cover.
-export function createStartup({ canvas, loading, status, errorText, retry, progressBar, progressFill, progressText, progressLabel }, onStage = () => {}) {
+export function createStartup({ canvas, loading, status, errorText, retry, progressBar, progressFill }, onStage = () => {}) {
   let failed = false;
   let ready = false;
   let progress = 0;
@@ -21,7 +21,6 @@ export function createStartup({ canvas, loading, status, errorText, retry, progr
     // Rust sends f32 values; allow its rounding error at whole-percent edges.
     const percentage = Math.floor(progress * 100 + 1e-5);
     progressFill.style.width = `${percentage}%`;
-    progressText.textContent = `${percentage}%`;
     progressBar.setAttribute('aria-valuenow', String(percentage));
   }
   setProgress(0);
@@ -32,8 +31,7 @@ export function createStartup({ canvas, loading, status, errorText, retry, progr
     failed = true;
     setStage('error');
     loading.hidden = false;
-    status.textContent = 'The arena could not start.';
-    if (progressLabel) progressLabel.textContent = 'PREPARATION PAUSED';
+    status.textContent = 'Unable to start';
     errorText.textContent = message;
     errorText.hidden = false;
     retry.hidden = false;
@@ -55,7 +53,7 @@ export function createStartup({ canvas, loading, status, errorText, retry, progr
     } else {
       setProgress(value);
       loading.hidden = false;
-      status.textContent = state === 'assets' ? 'Preparing the knights…' : 'Preparing the arena lighting…';
+      status.textContent = 'Loading';
     }
   }
   return {
@@ -64,7 +62,7 @@ export function createStartup({ canvas, loading, status, errorText, retry, progr
     compiled() {
       if (failed || ready) return;
       setProgress(0.1);
-      status.textContent = 'Preparing the arena…';
+      status.textContent = 'Loading';
     },
     begin() {
       if (failed || ready) return;

@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#10100e">
-  <title>Souls Arena — The Ashen Games</title>
+  <title>Souls Arena</title>
   <style>
     @font-face { font-family: Cinzel; src: url('./assets/fonts/Cinzel.ttf') format('truetype'); font-display: swap; }
     @font-face { font-family: Barlow; src: url('./assets/fonts/Barlow.ttf') format('truetype'); font-display: swap; }
@@ -15,39 +15,31 @@
     #loading { position: fixed; inset: 0; display: grid; place-items: center; background: #10100e; z-index: 2; }
     #loading[hidden] { display: none; }
     .panel { display: flex; flex-direction: column; align-items: center; width: min(560px, calc((100vw - 48px) / var(--loading-scale))); text-align: center; transform: scale(var(--loading-scale)); }
-    .eyebrow { margin-bottom: 18px; font-size: 14px; line-height: 1.2; color: #bc975c; }
-    h1 { margin: 0 0 24px; font: 400 48px/1.2 Cinzel, Georgia, serif; }
-    .emblem { position: relative; flex: none; width: 112px; height: 112px; margin-bottom: 24px; }
+    h1 { margin: 0 0 40px; font: 400 42px/1.2 Cinzel, Georgia, serif; }
+    .emblem { position: relative; flex: none; width: 112px; height: 112px; margin-bottom: 40px; }
     .circle { position: absolute; left: 8px; top: 8px; width: 96px; height: 96px; border: 1px solid #bc975c; border-radius: 50%; opacity: .18; }
     .circle.inner { left: 19px; top: 19px; width: 74px; height: 74px; opacity: .08; }
     .runes, .sword { position: absolute; inset: 0; }
-    .runes { animation: revolve 17.951958s linear infinite; }
-    .rune { position: absolute; left: 55px; top: 52px; width: 2px; height: 8px; background: #bc975c; transform: rotate(calc(var(--i) * 30deg)) translateY(-48px); opacity: calc(.18 + .65 * var(--i) / 11); }
-    .sword { animation: kindle 2.855993s ease-in-out infinite; }
+    .runes { animation: revolve 28.559933s linear infinite; }
+    .rune { position: absolute; left: 55px; top: 52px; width: 2px; height: 8px; background: #bc975c; transform: rotate(calc(var(--i) * 30deg)) translateY(-48px); opacity: calc(.15 + .45 * var(--i) / 11); }
+    .sword { animation: kindle 4.487990s ease-in-out infinite; }
     .sword i { position: absolute; display: block; background: #bc975c; }
     .sword .tip { left: 53px; top: 20px; width: 6px; height: 6px; transform: rotate(45deg); background: #e5d5b7; }
     .sword .blade { left: 54px; top: 24px; width: 4px; height: 43px; background: #e5d5b7; }
     .sword .guard { left: 42px; top: 66px; width: 28px; height: 3px; }
     .sword .grip { left: 54px; top: 69px; width: 4px; height: 12px; }
     .sword .pommel { left: 53px; top: 81px; width: 6px; height: 6px; transform: rotate(45deg); }
-    .ember { position: absolute; top: 112px; left: var(--x); width: 2px; height: 2px; animation: rise 6.25s linear infinite; animation-delay: calc(var(--i) * -1.5625s); }
-    .ember i { display: block; width: 2px; height: 2px; background: #bc975c; animation: drift 7.853982s ease-in-out infinite; animation-delay: calc(var(--i) * -1.25s); }
     @keyframes revolve { to { transform: rotate(360deg); } }
-    @keyframes kindle { 0%, 50%, 100% { opacity: .8; } 25% { opacity: 1; } 75% { opacity: .6; } }
-    @keyframes rise { 0% { transform: translateY(0); opacity: 0; } 25% { opacity: .354; } 50% { opacity: .5; } 75% { opacity: .354; } 100% { transform: translateY(-112px); opacity: 0; } }
-    @keyframes drift { 0%, 50%, 100% { transform: translateX(0); } 25% { transform: translateX(4px); } 75% { transform: translateX(-4px); } }
+    @keyframes kindle { 0%, 50%, 100% { opacity: .86; } 25% { opacity: 1; } 75% { opacity: .72; } }
     #loading[data-state="error"] *, #loading[data-state="ready"] * { animation-play-state: paused; }
-    @media (prefers-reduced-motion: reduce) { .runes, .sword, .ember, .ember i { animation: none; } .ember { display: none; } }
+    @media (prefers-reduced-motion: reduce) { .runes, .sword { animation: none; } }
     p { margin: 0; font: 17px/1.2 Barlow, sans-serif; color: #b7b0a4; }
-    #status { margin-bottom: 18px; font-size: 20px; color: #e5d5b7; }
-    .progress { width: 360px; max-width: 100%; margin-bottom: 18px; }
-    .progress-caption { display: flex; justify-content: space-between; gap: 12px; margin-bottom: 8px; font-size: 14px; line-height: 1.2; color: #bc975c; }
-    #progress-text { color: #e5d5b7; }
-    #progress { height: 6px; border: 1px solid rgba(188, 151, 92, .35); background: #2b2820; background-clip: padding-box; overflow: hidden; }
+    #status { margin-bottom: 18px; font-size: 14px; }
+    #progress { width: 240px; max-width: 100%; height: 2px; background: #2b2820; overflow: hidden; }
     #progress-fill { width: 0%; height: 100%; background: #bc975c; transition: width .3s ease-out; }
     #loading[data-state="error"] #progress-fill, #loading[data-state="ready"] #progress-fill { transition: none; }
     @media (prefers-reduced-motion: reduce) { #progress-fill { transition: none; } }
-    button { border: 1px solid #bc975c; padding: 12px 28px; margin-top: 12px; background: #201b14; color: #e5d5b7; font: 14px Barlow, sans-serif; text-transform: uppercase; cursor: pointer; }
+    button { border: 1px solid #bc975c; padding: 12px 28px; margin-top: 18px; background: #201b14; color: #e5d5b7; font: 16px Barlow, sans-serif; cursor: pointer; }
     button:hover, button:focus-visible { background: #3d3020; outline: 1px solid #e5d5b7; outline-offset: 4px; }
     #error { overflow-wrap: anywhere; }
     #error:not([hidden]) { margin-top: 18px; }
@@ -55,10 +47,9 @@
   </style>
 </head>
 <body>
-  <canvas id="game" tabindex="0" aria-label="Souls Arena. Use arrow keys and Enter or a controller to navigate the menu. WASD to move, J to attack, Space to dodge, H or F1 for the pause menu, Escape for a rematch."></canvas>
+  <canvas id="game" tabindex="0" aria-label="Souls Arena. Use arrow keys and Enter or a controller to navigate. WASD to move, J to attack, Space to dodge, Escape to pause or go back. Open Controls in the menu for bindings."></canvas>
   <section id="loading" aria-label="Loading Souls Arena">
     <div class="panel">
-      <div class="eyebrow">THE ASHEN GAMES</div>
       <h1>SOULS ARENA</h1>
       <div class="emblem" aria-hidden="true">
         <div class="circle"></div><div class="circle inner"></div>
@@ -68,23 +59,17 @@
           <i class="rune" style="--i:8"></i><i class="rune" style="--i:9"></i><i class="rune" style="--i:10"></i><i class="rune" style="--i:11"></i>
         </div>
         <div class="sword"><i class="tip"></i><i class="blade"></i><i class="guard"></i><i class="grip"></i><i class="pommel"></i></div>
-        <span class="ember" style="--i:0;--x:20px"><i></i></span><span class="ember" style="--i:1;--x:40px"><i></i></span>
-        <span class="ember" style="--i:2;--x:73px"><i></i></span><span class="ember" style="--i:3;--x:92px"><i></i></span>
       </div>
-      <p id="status" role="status" aria-live="polite">Preparing the arena…</p>
-      <div class="progress">
-        <div class="progress-caption"><span id="progress-label">PREPARING YOUR TRIAL</span><span id="progress-text" aria-hidden="true">0%</span></div>
-        <div id="progress" role="progressbar" aria-labelledby="progress-label" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div id="progress-fill"></div></div>
-      </div>
-      <p>Preparing the arena for your arrival.</p>
+      <p id="status" role="status" aria-live="polite">Loading</p>
+      <div id="progress" role="progressbar" aria-label="Loading" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div id="progress-fill"></div></div>
       <p id="error" hidden></p>
       <button id="retry" hidden>Try again</button>
     </div>
   </section>
   <noscript>JavaScript and WebGL2 are required to enter the arena.</noscript>
   <script type="module">
-    import { createStartup, installAudioUnlock } from './startup.js?v=b2202c0ab52f0e96';
-    import { startStartupProfile } from './startup-profile.js?v=b2202c0ab52f0e96';
+    import { createStartup, installAudioUnlock } from './startup.js?v=8e42364757778a7f';
+    import { startStartupProfile } from './startup-profile.js?v=8e42364757778a7f';
 
     const canvas = document.querySelector('#game');
     const loading = document.querySelector('#loading');
@@ -93,8 +78,6 @@
     const retry = document.querySelector('#retry');
     const progressBar = document.querySelector('#progress');
     const progressFill = document.querySelector('#progress-fill');
-    const progressText = document.querySelector('#progress-text');
-    const progressLabel = document.querySelector('#progress-label');
     const resizeLoading = () => {
       const scale = Math.min(1.6, Math.max(0.6, Math.min(window.innerWidth / 1280, window.innerHeight / 800)));
       loading.style.setProperty('--loading-scale', String(scale));
@@ -102,7 +85,7 @@
     resizeLoading();
     window.addEventListener('resize', resizeLoading);
     let recordStage = () => {};
-    const startup = createStartup({ canvas, loading, status, errorText, retry, progressBar, progressFill, progressText, progressLabel }, state => recordStage(state));
+    const startup = createStartup({ canvas, loading, status, errorText, retry, progressBar, progressFill }, state => recordStage(state));
     window.soulsArenaStartup = startup.update;
     installAudioUnlock(window);
     retry.addEventListener('click', () => location.reload());
@@ -115,8 +98,8 @@
     window.addEventListener('unhandledrejection', event => startup.fail(event.reason));
     try {
       const [{ default: init }, wasmModule] = await Promise.all([
-        import('./soulsarena.js?v=b2202c0ab52f0e96'),
-        WebAssembly.compileStreaming(fetch('./soulsarena_bg.wasm?v=b2202c0ab52f0e96')),
+        import('./soulsarena.js?v=8e42364757778a7f'),
+        WebAssembly.compileStreaming(fetch('./soulsarena_bg.wasm?v=8e42364757778a7f')),
       ]);
       startup.compiled();
       recordStage = startStartupProfile(canvas);
